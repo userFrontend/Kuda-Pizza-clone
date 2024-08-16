@@ -1,0 +1,152 @@
+.user-account{
+    margin: 0 auto;
+    width: 865px;
+    margin-top: 100px;
+    .title-acc{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        h2{
+            font-size: 45px;
+        }
+        .navs{
+            button{
+                padding: 10px;
+                width: 160px;
+                border: var(--border);
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            .active-btn{
+                border-color: var(--site-color);
+                background-color: var(--site-color);
+                color: white;
+            }
+        }
+    }
+
+    .user-info, .user-password, .commit{
+        margin: 20px 0;
+        background-color: white;
+        padding: 20px;
+        border-radius: 10px;
+        h3{
+            font-size: 25px;
+        }
+        button{
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            margin-top: 15px;
+            padding: 10px 20px;
+            border-radius: 5px;
+            border: none;
+            font-size: 16px;
+            background-color: var(--site-color);
+            color: white;
+            cursor: pointer;
+        }
+        .update-btn{
+            margin: 0;
+            color: var(--site-color);
+            background: transparent;
+        }
+        form{
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px 0;
+            label{
+                display: flex;
+                flex-direction: column;
+                gap: 5px;
+                color: var(--grayscale);
+                font-size: 13px;
+                input{
+                    outline: none;
+                    padding: 15px 20px;
+                    border-radius: 5px;
+                    border: var(--border);
+                    &:disabled{
+                        padding: 0;
+                        background: transparent;
+                        border: none;
+                        font-size: 16px;
+                        color: black;
+                    }
+                }
+            }
+        }
+    }
+    .user-info{
+        display: flex;
+        align-items: start;
+        justify-content: space-between;
+    }
+    .title-pass{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .commit{
+        label{
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            gap: 5px;
+        }
+        #commit {
+            accent-color: var(--site-color);
+        }
+    }
+}
+
+@media (max-width: 950px){
+    .user-account{
+        width: 100%;
+    }
+}
+@media (max-width: 750px){
+    .user-account{
+        .title-acc{
+            flex-direction: column;
+            gap: 10px;
+            h2{
+                text-wrap: nowrap;
+            }
+        }
+    }
+}
+@media (max-width: 520px){
+    .user-account{
+        h3{
+            text-wrap: nowrap;
+        }
+        .information{
+            h3{
+                text-wrap: wrap;
+            }
+        }
+        .update-btn{
+            span{
+                display: none;
+            }
+        }
+        .user-password{
+        }
+    }
+}
+@media (max-width: 400px){
+    .user-account{
+        .title-acc{
+            .navs{
+                display: flex;
+                justify-content: center;
+                width: 100%;
+                button{
+                    width: 130px;
+                }
+            }
+        }
+    }
+}

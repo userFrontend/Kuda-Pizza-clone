@@ -1,0 +1,21 @@
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 80px;
+    h2{
+        font-size: 40px;
+    }
+    button{
+        border: none;
+        padding: 10px;
+        border: var(--border);
+        border-radius: 5px;
+        background-color: white;
+        cursor: pointer;
+        i{
+            color: var(--site-color);
+            margin-left: 10px;
+        }
+    }
+}
